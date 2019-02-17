@@ -27,7 +27,7 @@ public class AuthenticationFilter implements Filter{
         HttpServletRequest request = (HttpServletRequest) req;
         HttpServletResponse response = (HttpServletResponse) res;
         HttpSession session = request.getSession(false);
-        MysqlxDatatypes.Scalar.String loginURI = request.getContextPath() + "/login.jsp";
+        String loginURI = request.getContextPath() + "/login.jsp";
 
         boolean loggedIn = session != null && session.getAttribute("currentSessionUser") != null;
         boolean loginRequest = request.getRequestURI().equals(loginURI);

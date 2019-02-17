@@ -1,7 +1,9 @@
 package com.sda;
 
+import com.sda.dao.DepartmentDao;
 import com.sda.dao.EmployeeDao;
 import com.sda.dao.UserDao;
+import com.sda.model.Department;
 import com.sda.model.Employee;
 import com.sda.model.User;
 
@@ -17,5 +19,11 @@ public class Main {
 //          Employee employee = employeeDao.getEntityById(Employee.class, 1L);
         System.out.println(employee.getName());
         employeeDao.createEntity(employee);
+        Department department = new Department();
+        department.setManagerName("Nicu A");
+        DepartmentDao departmentDao = new DepartmentDao();
+//          Department department = departmentDao.getEntityById(Department.class, 1L);
+        System.out.println(department.getManagerName());
+        departmentDao.createEntity(department);
     }
 }

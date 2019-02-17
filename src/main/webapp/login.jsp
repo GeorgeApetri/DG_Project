@@ -17,18 +17,22 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=windows-1256">
     <title>Login Page</title>
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
 </head>
 
-<body>
-<form action="login" method="post">
+<body class="login-body">
+<div class="login-page">
+    <div class="form">
+        <form action="login" method="post" class="login-form">
 
-    Please enter your username
-    <input type="text" name="un"/><br>
+            <input type="text" name="un" placeholder="username"><br>
 
-    Please enter your password
-    <input type="text" name="pw"/>
+            <input type="password" name="pw" placeholder="password"/>
 
-    <input type="submit" value="submit">
-</form>
+            <input type="submit" value="submit">
+        </form>
+    </div>
+</div>
+
 </body>
 </html>
