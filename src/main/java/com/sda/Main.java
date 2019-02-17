@@ -14,13 +14,13 @@ public class Main {
         UserDao userDao = new UserDao();
         userDao.createEntity(user);
         Employee employee = new Employee();
-        employee.setName("Cosmin C");
+        employee.setName("bogdan C");
           EmployeeDao employeeDao = new EmployeeDao();
 //          Employee employee = employeeDao.getEntityById(Employee.class, 1L);
         System.out.println(employee.getName());
         employeeDao.createEntity(employee);
         Department department = new Department();
-        department.setManagerName("Nicu A");
+        department.setManagerName("ionut A");
         DepartmentDao departmentDao = new DepartmentDao();
 //          Department department = departmentDao.getEntityById(Department.class, 1L);
         System.out.println(department.getManagerName());
