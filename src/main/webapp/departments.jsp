@@ -12,12 +12,16 @@
 <jsp:useBean id="departmentService" class="com.sda.service.DepartmentService"></jsp:useBean>
 <jsp:useBean id="userService" class="com.sda.service.UserService"></jsp:useBean>
 
+<jsp:include page="header.jsp"/>
+
 <html>
 <head>
     <title>departments</title>
 </head>
 <body>
 <h1>Java Departments</h1>
+
+
 
 <c:forEach items="${departmentService.getAll()}" var="department">
     <span><c:out value="${department.getManagerName()}"/></span>
